@@ -27,7 +27,7 @@
 
          if ($wordCount >= 2 && isValidName($name)===true)
          {
-            header("Location: email.php");
+            header("Location: EmailValidation.php");
             exit();
          } 
          else 
