@@ -3,6 +3,7 @@
     <title>Gender Form</title>
 </head>
 <body>
+    <p>Please enter Gender</p>
     <form method="post">
         <fieldset style="width: 200px">
             <legend>GENDER</legend>
@@ -18,18 +19,14 @@
 </body>
 </html>
 
-<?php
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') 
-        $gender = $_REQUEST['gender'];
 
-        if (!empty($selectedGender)) 
-		{
-            header("Location: DegreeValidation.php");
-            exit();
-        } 
-		else 
-		{
-            echo "Please select a gender.";
-        }
-    
+<?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $gender = isset($_POST['gender']) ? $_POST['gender'] : null;
+
+    if (!empty($gender)) {
+        header("Location: DegreeValidation.php");
+        exit();
+    }
+}
 ?>

@@ -19,15 +19,18 @@
 
 
 <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") 
-    $email = $_POST['email'];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Check if 'email' is set before accessing it
+    $email = isset($_POST['email']) ? $_POST['email'] : null;
+
     if (isset($_POST['option']) && count($_POST['option']) >= 2) {
-		header("location: BDValidation.php");
-		exit();
- 
+        // Assuming 'BDValidation.php' is the correct redirection URL
+        header("Location: BDValidation.php");
+        exit();
     } else {
         echo "Please select at least two options.";
     }
-
+}
 ?>
+
 

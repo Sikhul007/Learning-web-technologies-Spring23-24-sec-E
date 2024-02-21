@@ -16,7 +16,7 @@
 		<label for="year">yyyy</label>
 		<input type="number" name="year" id="year" min="1900" max="2100" required />
 		<hr>
-		<input type="submit" name="" value="Submit" formaction="Degree.html">
+		<input type="submit" name="" value="Submit">
 	</fieldset>	
 	</form>
 </body>
