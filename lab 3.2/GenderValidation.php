@@ -19,8 +19,8 @@
 </html>
 
 <?php
-    
-        $selectedGender = $_POST['gender'] ?? '';
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') 
+        $gender = $_REQUEST['gender'];
 
         if (!empty($selectedGender)) 
 		{

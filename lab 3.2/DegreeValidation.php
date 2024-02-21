@@ -3,7 +3,7 @@
     <title>Degree Form</title>
 </head>
 <body>
-    <form method="post">
+    <form method="post" action = "">
         <fieldset style="width: 250px">
             <legend>Degree</legend>
             <input type="checkbox" name="option[]" value="SSC"> SSC
@@ -19,7 +19,8 @@
 
 
 <?php
-
+    if ($_SERVER["REQUEST_METHOD"] == "POST") 
+    $email = $_POST['email'];
     if (isset($_POST['option']) && count($_POST['option']) >= 2) {
 		header("location: BDValidation.php");
 		exit();
@@ -29,3 +30,4 @@
     }
 
 ?>
+

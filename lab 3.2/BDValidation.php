@@ -3,7 +3,7 @@
     <title>Blood Group Form</title>
 </head>
 <body>
-    <form method="post">
+    <form method="post" action="">
         <fieldset style="width: 200px">
             <legend>Blood Group</legend>
             <select name="bloodGroup">
@@ -26,11 +26,17 @@
 </html>
 
 <?php
-    $selectedBloodGroup = $_POST['bloodGroup'];
-    if (empty($selectedBloodGroup) || $selectedBloodGroup === "Select Blood Group") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $selectedBloodGroup = $_POST['bloodGroup']; 
+    
+    if (empty($selectedBloodGroup)) {
+        echo "Please select a blood group.";
+    } elseif ($selectedBloodGroup === "Select Blood Group") {
         echo "Please select a valid blood group.";
     } else {
-        echo "Validation successful.";
+        echo "Validation successful. Selected blood group: $selectedBloodGroup";
     }
-
+}
 ?>
+
+
