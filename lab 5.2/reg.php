@@ -1,56 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
 </head>
 <body>
 
-    
+    <?php
+        // PHP code for dynamic content
+        $currentYear = date("Y");
+    ?>
 
-    <table border="1" cellspacing="0" width="100%">
-        <tr height="100px"> 
-            <td>xcompany</td>
-            <td align="right">
-                <a href="http://localhost/lab1/firstpage.html">home</a>|
-                <a href="http://localhost/lab1/sec_page.html">login</a>|
-                <a href="http://localhost/lab1/sec_page.html">registration</a>
+    <table border="1" cellspacing="0" width="500px" align="center">
+        <tr height="100px">
+            <td style="border-right: none;">
+                <img src="1.png" alt="">
+            </td>
+            <td align="right" style="border-left: none;">
+                <a href="home.php">Home</a> |
+                <a href="login.php">Login</a> |
+                <a href="reg.php">Registration</a>
             </td>
         </tr>
-
         <tr>
-            <td align="left" colspan="2">
-                <form method="post" action="1.php"enctype = "">
+            <td colspan="2">
+                <form method="post" action="1.php" enctype="">
                     <fieldset>
                         <legend><b>REGISTRATION</b></legend>
-                        
-                               NAME:                    <input type="text" name="name" value="" /> <br><hr>
-                               Email:                   <input type="text" name="Email" value="" /> <br><hr>
-                               Username:                <input type="text" name="Username" value="" /> <br><hr>
-                               Password:                <input type="text" name="Password" value="" /> <br><hr>
-                               Confirm Password:        <input type="text" name="Confirm Password" value="" /> <br><hr>
-                             <fieldset> 
-                               <legend><b>GENDER</b></legend>
-                                                        <input type="radio" name="gender" value="" /> Male
-                                                        <input type="radio" name="gender" value="" /> Female
-                                                        <input type="radio" name="gender" value="" /> Other <br><hr>
-                            </fieldset> 
-                            <fieldset>
-                               <legend><b>DATE OF BIRTH</b></legend>
-                                                        <input type="date" name="" value="" /> <br><hr>
-                           </fieldset>                           
-                                                       <br><input type="submit" name="" value="Submit" /><t><input type="button" name="" value="Reset" />
+
+                        <table>
+                            <tr>
+                                <td>Name:</td>
+                                <td><input type="text" name="name" /><hr></td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td><input type="text" name="Email" />[i]<hr></td>
+                            </tr>
+                            <tr>
+                                <td>Username:</td>
+                                <td><input type="text" name="Username" /><hr></td>
+                            </tr>
+                            <tr>
+                                <td>Password:</td>
+                                <td><input type="password" name="Password" /><hr></td>
+                            </tr>
+                            <tr>
+                                <td>Confirm Password:</td>
+                                <td><input type="password" name="Confirm Password" /><hr></td>
+                            </tr>
+                        </table>
+
+                        <fieldset>
+                            <legend><b>GENDER</b></legend>
+                            <input type="radio" name="gender" value="" /> Male
+                            <input type="radio" name="gender" value="" /> Female
+                            <input type="radio" name="gender" value="" /> Other
+                        </fieldset>
+
+                        <fieldset>
+                            <legend><b>DATE OF BIRTH</b></legend>
+                            <input type="date" name="" value="" />
+                        </fieldset>
+
+                        <br>
+                        <input type="submit" name="" value="Submit" />
+                        <input type="button" name="" value="Reset" />
                     </fieldset>
                 </form>
             </td>
         </tr>
-
-        <tr >
-            <td colspan="2" align="center">
-                copyright@2017
+        <tr>
+            <td colspan="2" align="center" height="25px">
+                Copyright &copy; <?php echo $currentYear; ?>
             </td>
-            
         </tr>
-    
     </table>
 </body>
 </html>
