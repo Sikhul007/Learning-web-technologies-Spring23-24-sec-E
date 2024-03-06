@@ -9,12 +9,12 @@
         // PHP code for dynamic content
         $currentYear = date("Y");
     ?>
-    <table border="1" cellspacing="0" width="1000px" align="center">
+    <table border="1" cellspacing="0" width="700px" align="center">
         <tr height="100px">
             <td style="border-right: none;">
                 <img src="1.png" alt="">
             </td>
-            <td align="right" style="border-left: none;" colspan="2">
+            <td align="right" style="border-left: none;" colspan="2" style=";">
                 Logged in as <a href="view_profile.php">Bob</a> |
                 <a href="logout.php">Logout</a> 
             </td>
@@ -34,19 +34,15 @@
             </th>
             
             <td style="border-right: none;">
-                <form method="post" action=""enctype = "">
+                <form method="post" action="" enctype = "">
                     <fieldset >
-                        <legend><b>CHANGE PASSWORD</b></legend>
-                            Current Password :<input type="text" name="Password" value="" /> <br> <hr>
-                            New Password     :<input type="text" name="newPassword" value="" /> <br><hr>
-                            Retype New Password   :<input type="text" name="newPassword" value="" /> <br><hr>
-                            <a href="edit_profile.php">Edit profile</a>
+                        <legend><b>PROFILE PICTURE</b></legend>
+                        <img src="profile.png" alt="" height="100px" width="100px" style="padding: 10px;"><br>
+                        Picture <input type="file" name="" value=""><br>
+                        <hr>
+                        <input type="submit" name="" value="Submit">
                     </form>
                 </td>
-                <td style="border-left: none;">
-                    <img src="profile.png" alt="" height="100px" width="100px" style="padding: 10px;"><br>
-                    <a href="profile_pic.php" style="padding: 37px;">Change</a>
-                </td>  
             </fieldset>  
             </tr>
                 
