@@ -21,7 +21,7 @@
             </td>
         </tr>
 
-        <th align="left">
+        <th align="left" style="padding: 10px;">
         Account<br><hr>
             <ul>
                 <li><a href="dash_board.php">Dashboard</a></li>
@@ -33,9 +33,9 @@
             </ul>
         </th>
 
-        <td>
-            <h3 style="margin-top: 1px;">Welcome Bob</h3>
-        </td>
+        <td style="vertical-align: top;">
+            <p style="padding-left: 10px;"><b>Welcome Bob</b></p>
+        </td>        
         <tr>
             <td colspan="2" align="center" height="25px">
                 Copyright &copy; <?php echo $currentYear; ?>
