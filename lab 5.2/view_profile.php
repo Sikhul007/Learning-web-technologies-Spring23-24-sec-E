@@ -20,7 +20,7 @@
             </td>
         </tr>
 
-        <th align="left">
+        <th align="left" style="padding: 10px;">
         Account<br><hr>
             <ul>
                 <li><a href="dash_board.php">Dashboard</a></li>
