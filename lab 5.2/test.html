@@ -14,13 +14,16 @@
             <td style="border-right: none;">
                 <img src="1.png" alt="">
             </td>
+<<<<<<< HEAD
             <td align="right" style="border-left: none;" colspan="2" style=";">
+=======
+            <td align="right" style="border-left: none;">
+>>>>>>> ec6796e6f3d6127589ff147dde29f3396504095e
                 Logged in as <a href="view_profile.php">Bob</a> |
                 <a href="logout.php">Logout</a> 
             </td>
         </tr>
 
-       <tr>
         <th align="left" style="padding: 10px;">
             Account<br><hr>
                 <ul>
@@ -34,6 +37,7 @@
             </th>
             
             <td style="border-right: none;">
+<<<<<<< HEAD
                 <form method="post" action="" enctype = "">
                     <fieldset >
                         <legend><b>PROFILE PICTURE</b></legend>
@@ -44,10 +48,25 @@
                     </form>
                 </td>
             </fieldset>  
+=======
+                <form method="post" action=""enctype = "">
+                    <fieldset>
+                        <legend><b>CHANGE PASSWORD</b></legend>
+                            Current Password :<input type="text" name="Password" value="" /> <br> <hr>
+                            New Password     :<input type="text" name="newPassword" value="" /> <br><hr>
+                            Retype New Password   :<input type="text" name="newPassword" value="" /> <br><hr>
+                            <a href="edit_profile.php">Edit profile</a>
+                    </form>
+                </td>
+                <td style="border-left: none;">
+                    <img src="profile.png" alt="" height="100px" width="100px" style="padding: 10px;"><br>
+                    <a href="profile_pic.php" style="padding: 37px;">Change</a>
+                </td>    
+>>>>>>> ec6796e6f3d6127589ff147dde29f3396504095e
             </tr>
-                
+                </fieldset>
         <tr>
-            <td colspan="3" align="center" height="25px">
+            <td colspan="2" align="center" height="25px">
                 Copyright &copy; <?php echo $currentYear; ?>
             </td>
         </tr>
