@@ -18,7 +18,7 @@
                 <img src="1.png" alt="">
             </td>
             <td align="right" style="border-left: none;">
-                <a href="home.php">Home</a> |
+                <a href="public_home.php">Home</a> |
                 <a href="login.php">Login</a> |
                 <a href="reg.php">Registration</a>
             </td>

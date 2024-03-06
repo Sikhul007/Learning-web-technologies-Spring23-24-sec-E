@@ -23,10 +23,10 @@
         <th align="left" style="padding: 10px;">
         Account<br><hr>
             <ul>
-                <li><a href="dash_board.php">Dashboard</a></li>
+                <li><a href="login_in_dash.php">Dashboard</a></li>
                 <li><a href="view_profile.php">View profile</a></li>
                 <li><a href="edit_profile.php">Edit Profile</a><br></li>
-                <li><a href="change_pp.php">Change Profile Picture</a><br></li>
+                <li><a href="profile_pic.php">Change Profile Picture</a><br></li>
                 <li><a href="change_pass.php">Change Password</a><br></li>
                 <li><a href="logout.php">Logout</a><br></li> 
             </ul>
