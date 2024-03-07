@@ -10,6 +10,10 @@
     <?php
         // PHP code for dynamic content
         $currentYear = date("Y");
+
+        // Include the controller file
+        include('../Controller/reg_C.php');
+    
     ?>
 
     <table border="1" cellspacing="0" width="500px" align="center">
@@ -25,7 +29,7 @@
         </tr>
         <tr>
             <td colspan="2">
-                <form method="post" action="1.php" enctype="">
+                <form method="post" action="../Controller/reg_C.php"> <!-- Updated form action -->
                     <fieldset>
                         <legend><b>REGISTRATION</b></legend>
 
@@ -36,37 +40,37 @@
                             </tr>
                             <tr>
                                 <td>Email:</td>
-                                <td><input type="text" name="Email" />[i]<hr></td>
+                                <td><input type="text" name="email" /><hr></td> <!-- Corrected input name -->
                             </tr>
                             <tr>
                                 <td>Username:</td>
-                                <td><input type="text" name="Username" /><hr></td>
+                                <td><input type="text" name="username" /><hr></td> <!-- Corrected input name -->
                             </tr>
                             <tr>
                                 <td>Password:</td>
-                                <td><input type="password" name="Password" /><hr></td>
+                                <td><input type="password" name="password" /><hr></td> <!-- Corrected input name -->
                             </tr>
                             <tr>
                                 <td>Confirm Password:</td>
-                                <td><input type="password" name="Confirm Password" /><hr></td>
+                                <td><input type="password" name="confirm_password" /><hr></td> <!-- Corrected input name -->
                             </tr>
                         </table>
 
                         <fieldset>
                             <legend><b>GENDER</b></legend>
-                            <input type="radio" name="gender" value="" /> Male
-                            <input type="radio" name="gender" value="" /> Female
-                            <input type="radio" name="gender" value="" /> Other
+                            <input type="radio" name="gender" value="male" /> Male
+                            <input type="radio" name="gender" value="female" /> Female
+                            <input type="radio" name="gender" value="other" /> Other
                         </fieldset>
 
                         <fieldset>
                             <legend><b>DATE OF BIRTH</b></legend>
-                            <input type="date" name="" value="" />
+                            <input type="date" name="dob" value="" />
                         </fieldset>
 
                         <br>
-                        <input type="submit" name="" value="Submit" />
-                        <input type="button" name="" value="Reset" />
+                        <input type="submit" name="submit" value="Submit" />
+                        <input type="reset" name="reset" value="Reset" />
                     </fieldset>
                 </form>
             </td>

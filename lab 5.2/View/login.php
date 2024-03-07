@@ -24,7 +24,7 @@
         </tr>
         <tr>
             <td colspan="2">
-                <form method="post" action="1.php" enctype="">
+                <form method="post" action="../Controller/login_C.php">
                     <fieldset>
                         <legend><b>LOGIN</b></legend>
 
@@ -35,17 +35,17 @@
                             </tr>
                             <tr>
                                 <td>Password:</td>
-                                <td><input type="text" name="Email" /></td>
+                                <td><input type="password" name="password" /></td>
                             </tr>
                         </table>
                         <hr> 
                         <input type="checkbox" name="remember" id="remember">
                         <label for="remember">Remember Me</label> <br>
                              
-                        <br><input type="submit" name="" value="Submit" />
+                        <br><input type="submit" name="submit" value="Submit" />
                         <a href="forgot_pass.php">Forgot Password?</a>
-             </fieldset>
-             </form>
+                    </fieldset>
+                </form>
             </td>
         </tr>
         <tr>
