@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Form</title>
+    <title>Change Password</title>
 </head>
 <body>
 
@@ -9,11 +9,10 @@
         // PHP code for dynamic content
         $currentYear = date("Y");
     ?>
-
-    <table border="1" cellspacing="0" width="500px" align="center">
+    <table border="1" cellspacing="0" width="700px" align="center">
         <tr height="100px">
             <td style="border-right: none;">
-                <img src="1.png" alt="">
+                <img src="../Asset/1.png" alt="">
             </td>
             <td align="right" style="border-left: none;">
                 Logged in as <a href="view_profile.php">Bob</a> |
@@ -33,15 +32,25 @@
             </ul>
         </th>
 
-        <td style="vertical-align: top;">
-            <p style="padding-left: 10px;"><b>Welcome Bob</b></p>
-        </td>        
+        <td>
+            <form method="post" action=""enctype = "">
+                <fieldset>
+                    <legend><b>CHANGE PASSWORD</b></legend>
+                           Current Password :<input type="text" name="Password" value="" /> <br>
+                           New Password     :<input type="text" name="newPassword" value="" /> <br>
+                           Retype New Password:<input type="text" name="newPassword" value="" /> <hr>
+                                         
+                            <input type="submit" name="" value="Submit" /><br><br>
+                </fieldset>
+            </form>
+            </td>
+        </tr>
         <tr>
             <td colspan="2" align="center" height="25px">
                 Copyright &copy; <?php echo $currentYear; ?>
             </td>
         </tr>
-    
+
     </table>
 
 </body>
